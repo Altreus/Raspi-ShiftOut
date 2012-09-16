@@ -1,16 +1,10 @@
 Raspi-ShiftOut
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+This module implements a shift register implementation similar to that of the
+Arduino SDK.
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
-
+It is based on Device::BCM2835, which has C dependencies, so be sure to check
+that you have the prerequisites to install that.
 
 INSTALLATION
 
@@ -21,6 +15,12 @@ To install this module, run the following commands:
 	make test
 	make install
 
+or simply:
+
+    cpanm Raspi::ShiftOut
+
+where cpanm is available, or with `cpan` where cpanm is not available.
+
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
@@ -28,28 +28,21 @@ perldoc command.
 
     perldoc Raspi::ShiftOut
 
-You can also look for information at:
+If you think you have found undesirable or buggy behaviour you can check the bug
+reports at Github.
+    
+    https://github.com/Altreus/Raspi-ShiftOut/issues
 
-    RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Raspi-ShiftOut
+If you need more support you can try IRC.
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Raspi-ShiftOut
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Raspi-ShiftOut
-
-    Search CPAN
-        http://search.cpan.org/dist/Raspi-ShiftOut/
-
+    irc.freenode.org/#perl
 
 LICENSE AND COPYRIGHT
 
 Copyright (C) 2012 Altreus
 
 This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+under the terms of the MIT/X11 Licence.
 
-See http://dev.perl.org/licenses/ for more information.
+See http://opensource.org/licenses/mit-license.php for more information.
 
